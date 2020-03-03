@@ -1,0 +1,2 @@
+#!/bin/sh
+grep "$1" -r $XFDR_PATH | fzf | awk '{split($0,a,":"); print a[1]}'
